@@ -1,3 +1,84 @@
-h1 {
-    background-color: red;
+body
+{
+    font-family: releway;
+}
+.container {
+    display: flex;
+    list-style: none;
+    /* flex-wrap: now-wrap; */
+    justify-content: flex-end;
+    border: 1px solid red;
+}
+section{
+    border: solid rebeccapurple 1px;
+}
+
+.elemnt_accommodation {
+
+
+    margin: 10px;
+
+} 
+.elemnt_activities {
+
+
+    margin: 10px;
+}
+.elemnt_inscription {
+
+    margin: 10px;
+
+} 
+.button {
+    border :solid #F2F2F2 1px;
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    width: 25.5%;
+
+}
+.button button 
+{
+    background-color: #0065FC;
+    border-radius: 30px;
+    color: white;
+}
+.eco
+{
+    display: flex;
+    list-style: none;
+    width: 70%;
+
+
+
+    justify-content: space-between;
+    align-items:flex-start;
+
+
+}
+.ele_eco
+{
+    margin: 10px;
+    border: solid 2px #F2F2F2;
+    border-radius: 30% 20% 20% 20%;
+
+}
+li i
+{
+    border: solid 2px #DEEBFF;
+    color:#0065FC;
+    background-color: ;
+}
+i
+{
+    border: solid 2px #F2F2F2;
+    margin-right: 10px;
+    /* background-color: #F2F2F2; */
+    padding: 10px;
+    border-radius: 50%;
+}
+a 
+{
+    outline: none;
+    text-decoration: none;
+    color: black;
 }
