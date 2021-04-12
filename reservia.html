@@ -4,87 +4,121 @@
     <title></title>
     <script src="https://kit.fontawesome.com/877c0ba17d.js" crossorigin="anonymous"></script>
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="reservia.css">
+    <link rel="stylesheet" type="text/css" href="reservia copy.css">
 </head>
 <body>
+    <nav>
+        <ul class="container">
+            <dt class = "elemnt_accommodation">
+                <a href="#">Hébergements</a></dt>
+            <dt class = "elemnt_activities">
+                <a href="#">Activités</a></dt>
+            <dt class = "elemnt_inscription"><a href="#">S'inscrire</a></dt>
+        </ul>
+    </nav>
     <header>
-        <nav>
-            <ul class="container">
-                
-                <li class = "elemnt_accommodation">Hébergements</li>
-                <li class = "elemnt_activities">Activités</li>
-                <li class = "elemnt_inscription">S'inscrire</li>
-            </ul>
-            <img class="str_img" src="images/logo/Reservia.svg" alt="">
-        </nav>
+        <img class="str_img" src="images/logo/Reservia.svg" alt="">
     </header>
-    <section>
-        <h3>Trouver votre hébergement pour des vacances de rêve</h3>
+    
+    <main>
+        <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
         <p>En plein centre ville ou en pleine nature</p>
-        <div class="search">
+        <section class = "search">
             <i class="fas fa-map-marker-alt"></i>
             <input type="text">
             <button type="button">
                 Rechercher</button>
-        </div>
-    </section>
-    <section >
-        <ul class ="eco"><a href=""></a>
-            <li class="ele_eco">Filtres</li>
-            <li class = "ele_eco">
-                <i class="fas fa-money-bill-wave"></i>
-                <a href="#">Économique</a>
-            </li>
-            <li class = "ele_eco">
-                <i class="fas fa-child"></i>
-                <a href="#">Familial</a>
-            </li>
+        </section>
 
-            <li class = "ele_eco">
-                <i class="fas fa-heart"></i>
-                <a href="#">Romantique</a>
-            </li>
-            <li class = "ele_eco">
-                <i class="fas fa-dog">
-                </i>
-                <a href="#">Animaux autorisés</a>
-            </li>
-        </ul>
-    </section>
-    <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibbles dans cette ville</p>
-    <section>
-        <h3>Hébergements a Marseille</h3>
-        <!-- 6 images -->
-        <p>Afficher plus</p>
+        <section class = "filtre">
+
+        <ul class="container_filter">
+                <dt class = "element">Filtres</dt>
+                <dt class = "elements">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <a href="#">Économique</a>
+                </dt>
+                <dt class = "elements">
+                    <i class="fas fa-child"></i>
+                    <a href="#">Familial</a></dt>
+                <dt class = "elements">
+                    <i class="fas fa-heart"></i>
+                    <a href="#">Romantique</a></dt>
+
+                <dt class = "elements">
+                    <i class="fas fa-dog"></i>
+                    <a href="#">Animaux autorisés</a>
+                </dt>
+
+            </ul>
+            <p><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+        </section>
+        <section class="accomodations_photos">
+            <div class = 'principal'>
+                <div class = "photos"><img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                    <div class="text">
+                        <p>Auberge la Cannebiere<br>Nuit a partir de 25E </p>
+                        
+                    </div>
+                </div>
+                <div class = "photos"><img src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
+                    <div class="text"> 
+                        <p>Hotel du port <br> Nuit a partir de 25E </p>
+
+                    </div>
+                </div>
+                <div class = "photos"><img src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
+                    <div class="text">
+                        <p>Hotel Les mouettes<br>Nuit a partir de 76 </p>
+
+                    </div>
+                </div>
+                <div class = "photos"><img src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
+                    <div class="text_bot">                   
+                        <p>Hotel de la mer<br> Nuit a partir de 25E </p>
+
+                    </div>
+                </div>
+                <div class = "photos"><img src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
+                    <div class="text_bot">
+                        <p>Auberge Le Panier <br>Nuit a partir de 25E </p>
+                        
+                    </div>
+                </div>
+                <div class = "photos"><img src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
+                    <div class="text_bot">
+                    <p>Hotel chez Amina <br>Nuit a partir de 25E </p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <aside>
             <h3>Les plus populaires</h3>
+            <div class="photos"><img src="./images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
+                <div>
+                <p>Hotel chez Amina <br>Nuit a partir de 25E </p>
+                </div>
+            </div>
         </aside>
-    </section>
-    <section>
-        <h1>Activités a Marseille</h1>
-    </section>
-    <footer class = "bot_page">
-        <ul>
-        </ul>
-        <ul>
-            
-            <li>A propos</li>
-            <li>Fonctionnement du site</li>
-            <li>Conditions générales de vente</li>
-            <li>Données et confidentialité</li>
-        </ul>
-        <ul>
-            
-            <li>Nos hébergements</li>
-            <li>Charte qualité</li>
-            <li>Soumettre votre hôtel</li>
-        </ul>
-        <ul>
-            <li>Assistance</li>
-            <li>Centre d'aide</li>
-            <li>Nous contacter</li>
-        </ul>
-    </footer>
-
+    </main>
+            <!-- <footer class = "bot_page">
+                <ul>
+                    
+                    <dt>A propos</dt>
+                    <li>Fonctionnement du site</li>
+                    <li>Conditions générales de vente</li>
+                    <li>Données et confidentialité</li>
+                </ul>
+                <ul>
+                    <dt>Nos hébergements</dt>
+                    <li>Charte qualité</li>
+                    <li>Soumettre votre hôtel</li>
+                </ul>
+                <ul>
+                    <dt>Assistance</dt>display: flex;
+                    <li>Centre d'aide</li>
+                    <li>Nous contacter</li>
+                </ul>
+            </footer> -->
 </body>
 </html>
