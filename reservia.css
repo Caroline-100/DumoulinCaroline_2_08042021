@@ -11,9 +11,30 @@
 body {
     font-family: 'Raleway Thin Regular','Harabara Bold', Arial, sans-serif;
   
-    margin-left: 5%;
+    /* margin-left: 5%; */
 }
-dt.elemnt_accommodation, dt.elemnt_activities, dt.elemnt_inscription {
+
+.container {
+    
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    width: auto;
+    height: 10px;
+}
+@media all and (max-width:800px){
+    .container {
+        justify-content: space-around;
+    }
+}
+@media all and (max-width:667px){
+    .container {
+        margin: 0;
+        flex-direction: column;
+    }
+}
+li.elemnt_accommodation, li.elemnt_activities, li.elemnt_inscription {
     margin :25px;
     height: 100px;
     padding-top: 10px;
@@ -22,49 +43,18 @@ a:link {
 
     text-decoration: none;
 }
-.container {
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: auto;
-    height: 10px;
-
-}
-
 .elemnt_accommodation a:visited  ,.elemnt_inscription a:visited {
     color:#0065FC;
 }
 .elemnt_activities a:visited {
     color: #222222;
 }
-.elemnt_activities:hover {
-
+.elemnt_activities:hover, .elemnt_inscription:hover,.elemnt_accommodation:hover  {
 
     border-top: solid #0065FC;
-
     margin-top: -16px;
     padding-top: 49px;
 }
-.elemnt_inscription:hover {
-
-
-    border-top: solid #0065FC;
-
-    margin-top: -16px;
-    padding-top: 49px;
-} 
-.elemnt_accommodation
-{
-    color:#0065FC;
-}
-.elemnt_accommodation:hover {
-
-
-    border-top: solid #0065FC;
-    margin-top: -16px;
-    padding-top: 49px;
-} 
 /* # end navigation *****************************************/
 
 
@@ -186,70 +176,78 @@ i.fas.fa-info-circle {
 
 /* # end section filtres  *****************************************/
 
-.accomodations_photos {
+.section_accommodotion
+{
+    background-color: #F2F2F2;
     display: flex;
-    
+    float: left;
     width: 100%;
-    height: 100%;
-    background-color: #222222;
-    border: solid 2px rgb(0, 0, 0);
 }
-div.photos {
-    
-    position: relative;
-    
-} 
-div.photos img {
-
-    width:150px;
-    height:150px;
-    border: solid 2px white;
-    position: relative;
-    border-radius: 10%;
-    
-
-}
-.principal {
+.parent {
     display: flex;
-    width: 500px;
-    height: 70%;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
-    border: solid #333333 2px;
-    border-top-width: 50px;
-    border-left-width: 25px;
-    border-right-width: 25px;
-    border-bottom-width: 50px;
-   
-} 
-/* 
-  
+    padding-left: 10px;
+    text-align: justify;
 
 
-.text { 
-    display: block; 
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    background-color: #F2F2F2;
-    top: 452px;
-    font-size: .9em;
-    padding-right: 2%;
-    padding-bottom: 1%;
+}
+.fas.fa-star {
+    color: #0065FC;
+}
+.fas.fa-star.grey_star{
+    color: #DEEBFF; 
+}
+
+li{
+
+    list-style: none;
+}
+.child
+{
+    width: 200px;
+    height: 96px;
+    border-radius: 10%;
+    border: white solid 2px;
+    padding-bottom: 12px;
+    background-color: white;
+
+
+    padding-bottom: 65px;
+}
+.child.aside {
+    display: -webkit-inline-box;
+    padding-right: 150px;
+    padding-bottom: 0%;
+    height: 150px;
+    box-shadow: 0px 0px 10px #DEEBFF;
+    /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+}
+.p_card.aside {
+    justify-content: space-between;
+    
+
+}
+.child_photos {
+    height: 100%;
+    width: 100%;
+    border: white solid 2px;
+    
+    object-fit:cover;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    
+}
+.child_photos.aside_child
+{
+    width: 130px;
+    border-top-right-radius: 0%;
     border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%; 
-} 
- .text_bot { 
-    display: block; 
-    font-size: .9em;
+    
+}
+aside {
     display: flex;
-    justify-content: center;
-    position: absolute;
-    background-color: #F2F2F2;
-    top: 609px;
-    padding-right: 5px;
-    padding-bottom: 2px;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%; 
- } /*   */
+    flex-direction: column;
+    float: right;
+}
+
