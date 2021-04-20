@@ -176,8 +176,9 @@ i.fas.fa-info {
 
 .acc_aside {
     display: grid;
-    grid-template-columns: 20% 20% 200px 100px 20% 100px;
-    grid-template-rows: 100px 450px 100px;
+    grid-template-columns: 3% 20% 20% 15% 90px 20%;
+    grid-template-rows: 100px 450px 50px;
+    grid-gap: 1rem;
 }
 
 .parent {
@@ -188,8 +189,9 @@ i.fas.fa-info {
     border-radius: 20px;
     grid-row-start: 2;
     grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-gap: 1rem;
+    grid-column-start: 2;
+    grid-column-end: 5;
 }
 
 .child {
@@ -211,10 +213,11 @@ i.fas.fa-info {
 }
 
 .hbg {
-    grid-column-start: 1;
+    grid-column-start: 2;
     margin-left: 0px;
-    grid-column-end: 4;
+    grid-column-end: 5;
     height: 100px;
+    margin-top: 0px;
     padding-left: 44px;
     border-radius: 20px;
     padding-top: 33px;
@@ -239,7 +242,7 @@ h4 {
 
 .fas.fa-star {
     color: #0065FC;
-    font-size: small;
+    font-size: smaller
 }
 
 .fas.fa-star.grey_star {
@@ -250,8 +253,13 @@ h4 {
     display: flex;
     background-color: #f2f2f1;
     flex-direction: column;
-    grid-column-start: 5;
-    border-radius: 20px;
+    grid-column-start: 6;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.p_card {
+    margin-left: 10px;
 }
 
 .child.aside {
@@ -263,7 +271,7 @@ h4 {
     /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
 }
 
-.aside {
+. .aside {
     justify-content: space-between;
 }
 
@@ -274,23 +282,34 @@ h4 {
     border-bottom-left-radius: 10px;
 }
 
-.all_activities {
-    /* grid-auto-columns: 25% 21% 25% 25%; */
-    display: grid;
-    grid-template-columns: 24% 24% 24% 24%;
-    display: grid;
+div {
+    grid-column-start: 6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #F2F2F2;
 }
 
-.populaire {
-    grid-column-start: 5;
+.all_activities {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 1rem;
+}
+
+/* .populaire {
+    /* grid-column-start: 5;
     padding-left: 44px;
     padding-top: 26px;
     background-color: #F2F2F2;
     height: 100px;
-    border-radius: 20px;
+    border-radius: 20px; */
+
 }
 
-.activities {
+*/ .activities {
     height: 100%;
     width: 100%;
     display: flex;
@@ -305,6 +324,7 @@ h4 {
 .part_two {
     grid-column-start: 2;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -315,6 +335,7 @@ h4 {
 .part_four {
     grid-column-start: 4;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -322,11 +343,12 @@ h4 {
     border: white solid 2px;
     height: fit-content;
     width: fit-content;
-    background-color: wheat;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    box-shadow: 2px 2px 33px 2px #F2F2F2;
+    ;
 }
 
 .vxPort {
@@ -355,7 +377,7 @@ h4 {
 
 .medium {
     height: 150px;
-    width: 200px;
+    width: 250px;
 }
 
 /* # start footer  *****************************************/
@@ -397,17 +419,32 @@ footer {
 
 /* # end footer  *****************************************/
 
-/* 
-acc aside
-display: grid;
-    grid-template-rows: 50px 10%;
-    grid-template-columns: 65% 20%;
-
-
-
-body > main > section.section_accommodotion > section > article
-<article class="parent" style="
-    grid-row-start: 2;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    align-items: center; */
+@media (max-width: 600px) {
+    .acc_aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: blue;
+    }
+    .parent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: blue;
+    }
+    .parent_aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .all_activities {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container_filter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
