@@ -21,17 +21,29 @@ body {
 
 /* # navigation *****************************************/
 
-li {
-    list-style: none;
+nav {
+    display: flex;
+    flex-direction: row;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-    width: auto;
-    height: 10px;
+    DISPLAY: FLEX;
+    FLEX-DIRECTION: unset;
+    WIDTH: 20%;
+    JUSTIFY-CONTENT: space-between;
+    ORDER: 1;
+}
+
+header {
+    width: 80%;
+}
+
+.elemnt_inscription {
+    order: 1;
+}
+
+li {
+    list-style: none;
 }
 
 main {
@@ -44,12 +56,6 @@ main {
     margin-top: 10px;
     margin-left: 0px;
     font-family: 'Raleway-ExtraLight', sans-serif;
-}
-
-li.elemnt_accommodation, li.elemnt_activities, li.elemnt_inscription {
-    margin: 25px;
-    height: 100px;
-    padding-top: 10px;
 }
 
 a:link {
@@ -66,8 +72,6 @@ a:link {
 
 .elemnt_activities:hover, .elemnt_inscription:hover, .elemnt_accommodation:hover {
     border-top: solid #0065FC;
-    margin-top: -16px;
-    padding-top: 49px;
 }
 
 /* # end navigation *****************************************/
@@ -164,11 +168,6 @@ i.fas.fa-info {
 
 /* # start section accomodotion  *****************************************/
 
-/* .section_accomodotion article .child_photos {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-} */
-
 .section_accommodotion {
     float: left;
     width: 100%;
@@ -177,15 +176,22 @@ i.fas.fa-info {
 .acc_aside {
     display: grid;
     grid-template-columns: 3% 20% 20% 15% 90px 20%;
-    grid-template-rows: 100px 450px 50px;
+    grid-template-rows: 50px 450px 50px;
     grid-gap: 1rem;
+}
+
+.hbg {
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-left: 44px;
+    border-radius: 20px;
+    padding-top: 33px;
 }
 
 .parent {
     display: grid;
     grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 200px 200px 100px;
-    background-color: rgb(241 241 242);
+    grid-template-rows: 200px 200px 50px;
     border-radius: 20px;
     grid-row-start: 2;
     grid-row-end: 2;
@@ -210,18 +216,6 @@ i.fas.fa-info {
     object-fit: cover;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-}
-
-.hbg {
-    grid-column-start: 2;
-    margin-left: 0px;
-    grid-column-end: 5;
-    height: 100px;
-    margin-top: 0px;
-    padding-left: 44px;
-    border-radius: 20px;
-    padding-top: 33px;
-    background-color: rgb(242, 242, 242);
 }
 
 h4 {
@@ -251,8 +245,10 @@ h4 {
 
 .parent_aside {
     display: flex;
-    background-color: #f2f2f1;
     flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 90%;
     grid-column-start: 6;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -271,7 +267,7 @@ h4 {
     /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
 }
 
-. .aside {
+.aside {
     justify-content: space-between;
 }
 
@@ -282,10 +278,10 @@ h4 {
     border-bottom-left-radius: 10px;
 }
 
-div {
+.text_icon {
     grid-column-start: 6;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: space-around;
     border-top-left-radius: 20px;
@@ -299,17 +295,7 @@ div {
     grid-gap: 1rem;
 }
 
-/* .populaire {
-    /* grid-column-start: 5;
-    padding-left: 44px;
-    padding-top: 26px;
-    background-color: #F2F2F2;
-    height: 100px;
-    border-radius: 20px; */
-
-}
-
-*/ .activities {
+.activities {
     height: 100%;
     width: 100%;
     display: flex;
@@ -349,6 +335,22 @@ div {
     border-bottom-left-radius: 10px;
     box-shadow: 2px 2px 33px 2px #F2F2F2;
     ;
+}
+
+.special {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    background-color: rgb(127 255 212);
+    grid-row-end: 4;
+}
+
+.together_aside {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    background-color: rgb(0 0 255);
+    grid-row-end: 4;
 }
 
 .vxPort {
@@ -419,32 +421,105 @@ footer {
 
 /* # end footer  *****************************************/
 
-@media (max-width: 600px) {
+@media screen and (max-width:730px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .special {
+        order: 2;
+    }
+    .together_aside {
+        order: 1;
+        background-color: #DEEBFF;
+    }
+    .container {
+        justify-content: space-evenly;
+        width: 100%;
+        padding-left: 0;
+    }
+    .elemnt_inscription {
+        position: absolute;
+        right: 48px;
+    }
+    .text_icon {
+        background-color: rgb(242 242 242);
+        border-radius: 0;
+    }
+    .parent_aside {
+        border-radius: 0px;
+    }
+    .elemnt_accommodation, .elemnt_activities {
+        border-bottom: 1px solid rgb(242 242 242);
+        color: rgb(128 128 128);
+        width: 100%;
+        border-top: 0;
+        padding-bottom: 39px;
+        text-align: center;
+    }
+    .elemnt_accommodation:hover, .elemnt_activities:hover {
+        border-bottom: solid red 1px;
+        border-top: 0;
+    }
+    .hbg {
+        background: none;
+    }
     .acc_aside {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: blue;
     }
     .parent {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: blue;
+        align-items: center;
+        background: none;
     }
     .parent_aside {
         display: flex;
+        align-items: center;
         flex-direction: column;
         justify-content: center;
     }
     .all_activities {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
     }
     .container_filter {
         display: flex;
+        flex-wrap: nowrap;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
+    }
+    footer {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .child {
+        box-shadow: 0px 0px 10px #DEEBFF;
+    }
+    .large, .medium, .xl, .child {
+        height: 200px;
+        width: 350px;
+    }
+    .child.aside {
+        padding: 0%;
+    }
+    .hook_text, h3 {
+        padding-left: 10px;
+    }
+    .search {
+        width: 100%;
+        text-align: center;
+    }
+    .VXFIG {
+        margin: 0px;
+        margin: 0px;
     }
 }
