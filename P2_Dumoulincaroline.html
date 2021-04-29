@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0"
-      ,
-      initial-scale="0.86,"
-      maximum-scale="5.0,"
-      minimum-scale="0.86"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0,minimum-scale=0.86"
     />
     <title>Reservia</title>
     <script
@@ -19,7 +15,7 @@
       href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="./reservia.css" />
+    <link rel="stylesheet" type="text/css" href="./P2_Dumoulincaroline.css" />
   </head>
   <body>
     <div class="all_page">
@@ -44,56 +40,61 @@
 
       <!-- start main *********************************************-->
       <main class="flex">
-        <h3 class="text_position--margin">
-          Trouvez votre hébergement pour des vacances de rêve
-        </h3>
-        <p class="hook_text">En plein centre ville ou en pleine nature</p>
-
-        <!-- start section search *********************************************-->
         <section class="search flex width_cent_percent">
-          <i class="fas fa-map-marker-alt"></i>
-          <input type="text" placeholder="Marseille,France" />
-          <button type="button">
-            <span class="hidden">Rechercher</span><i class="fas fa-search"></i>
-          </button>
+          <h3 class="text_position--margin">
+            Trouvez votre hébergement pour des vacances de rêve
+          </h3>
+          <p class="hook_text">En plein centre ville ou en pleine nature</p>
+          <!-- start section search *********************************************-->
+          <div class="search_bloc">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" placeholder="Marseille,France" />
+            <button type="button">
+              <span class="hide">Rechercher</span>
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
         </section>
         <!-- end section search *********************************************-->
 
         <!-- start section filtre *********************************************-->
-        <section class="filtre">
-          <ul class="container_filter flex screen_flex_col_justify_center">
-            <dt class="element flex">Filtres</dt>
-            <dt class="elements flex">
+        <section class="filter">
+          <h4>Filtre</h4>
+          <ul class="isolate R_isolate-element--space">
+            <li class="elements flex">
               <i class="fas fa-money-bill-wave"></i>
-              <a href="#">Économique</a>
-            </dt>
-            <dt class="elements flex">
+              <a href="#" class="space_objet_word">Économique</a>
+            </li>
+            <li class="elements flex">
               <i class="fas fa-child"></i>
-              <a href="#">Familial</a>
-            </dt>
-            <dt class="elements flex">
-              <i class="fas fa-heart"></i>
-              <a href="#">Romantique</a>
-            </dt>
-
-            <dt class="elements flex">
-              <i class="fas fa-dog"></i>
-              <a href="#">Animaux autorisés</a>
-            </dt>
+              <a href="#" class="space_objet_word">Familial</a>
+            </li>
           </ul>
-          <div class="dd">
-            <i id="info" class="fas fa-info info"></i>
-            <p class="texte">
-              Plus de 500 logements sont disponibles dans cette ville
-            </p>
-          </div>
+          <ul class="container_filter flex screen_flex_col_justify_center">
+            <li class="elements flex">
+              <i class="fas fa-heart"></i>
+              <a href="#" class="space_objet_word">Romantique</a>
+            </li>
+            <li class="elements flex">
+              <i class="fas fa-dog"></i>
+              <a href="#" class="space_objet_word">Animaux autorisés</a>
+            </li>
+          </ul>
         </section>
+        <div class="infos">
+          <i id="info" class="fas fa-info info"></i>
+          <p class="texte">
+            Plus de 500 logements sont disponibles dans cette ville
+          </p>
+        </div>
         <!-- end filter *********************************************-->
 
         <!-- start section_accommodotion *********************************************-->
         <section class="section_accommodotion">
+          <h2 class="hidden">Controls</h2>
           <!-- section regroup "section_accommodotion" and "aside_section_accommodotion" -->
           <section class="acc_aside screen_flex_col_justify_center">
+            <h2 class="hidden">Controls</h2>
             <section class="block_six_accomadations">
               <h3 class="title_accomodation">Hébergements à Marseille</h3>
               <article
@@ -102,8 +103,8 @@
                 <figure class="fig_accomadation">
                   <img
                     class="photo"
-                    src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                    alt=""
+                    src="./images/hebergements/compressed-images-websiteplanet/marcus-loke-wqjvwu_hzfo-unsplash_optimized.jpg"
+                    alt="Auberge de La Cannebière photo"
                   />
                   <figcaption class="text_card">
                     <span class="name_hostel">Auberge la Cannebière</span>
@@ -122,8 +123,8 @@
                 <figure class="fig_accomadation">
                   <img
                     class="photo"
-                    src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                    alt=""
+                    src="./images/hebergements/compressed-images-websiteplanet/fred-kleber-gtbaxavlvsg-unsplash_optimized.jpg"
+                    alt="Hôtel du Port"
                   />
                   <figcaption class="text_card">
                     <span class="name_hostel">Hôtel du Port</span><br />
@@ -140,8 +141,8 @@
                 <figure class="fig_accomadation">
                   <img
                     class="photo"
-                    src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                    alt=""
+                    src="./images/hebergements/compressed-images-websiteplanet/reisetopia-b8wigxa_pfu-unsplash_optimized.jpg"
+                    alt="Hôtel Les mouettes"
                   />
                   <figcaption class="text_card">
                     <span class="name_hostel">Hôtel Les mouettes</span> <br />
@@ -159,7 +160,7 @@
                   <img
                     class="photo"
                     src="./images/hebergements/compressed-images-websiteplanet/annie-spratt-eg1qciitaua-unsplash_optimized.jpg"
-                    alt=""
+                    alt="Hôtel de la mer"
                   />
                   <figcaption class="text_card">
                     <span class="name_hostel">Hôtel de la mer </span><br />
@@ -215,6 +216,7 @@
               </article>
             </section>
             <section class="party_aside">
+              <h2 class="hidden">Controls</h2>
               <div class="text_icon flex">
                 <h3 class="populaire">Les plus populaires</h3>
                 <i class="fas fa-chart-line"></i>
@@ -300,7 +302,6 @@
               </aside>
             </section>
           </section>
-          <!-- <-- class="acc_aside" -->
         </section>
         <section
           id="activities"
@@ -308,6 +309,7 @@
         >
           <h3 class="title_activities">Activités à Marseille</h3>
           <section class="activities part_one flexcol_space_beween">
+            <h2 class="hidden">Controls</h2>
             <figure class="VXFIG">
               <img
                 class="vxPort img_width xl"
@@ -318,6 +320,7 @@
             </figure>
           </section>
           <section class="activities col part_two flex flexcol_space_beween">
+            <h2 class="hidden">Controls</h2>
             <figure class="VXFIG">
               <img
                 class="vxPort img_width large"
@@ -336,6 +339,7 @@
             </figure>
           </section>
           <section class="activities flex part_three">
+            <h2 class="hidden">Controls</h2>
             <figure class="VXFIG">
               <img
                 class="vxPort img_width xl"
@@ -348,6 +352,7 @@
             </figure>
           </section>
           <section class="activities col part_four flex flexcol_space_beween">
+            <h2 class="hidden">Controls</h2>
             <figure class="VXFIG">
               <img
                 class="vxPort img_width large"
@@ -359,7 +364,7 @@
             <figure class="VXFIG">
               <img
                 class="vxPort img_width large"
-                src="./images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                src="./images/hebergements/compressed-images-websiteplanet/lena-paulin-wh2-ejodcv0-unsplash_optimized.jpeg"
                 alt="Parc Longchamp"
               />
               <figcaption class="vxPortX">Parc Longchamp</figcaption>
