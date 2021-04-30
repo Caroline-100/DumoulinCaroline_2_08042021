@@ -31,7 +31,7 @@ body {
     /* background-color: #0065FC; */
 }
 
-.all_page {
+.page {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -507,7 +507,7 @@ footer {
 /* # end footer  *****************************************/
 
 @media screen and (max-width: 1024px) {
-    .all_page {
+    .page {
         width: 100%;
     }
     .R_isolate-element--space {
