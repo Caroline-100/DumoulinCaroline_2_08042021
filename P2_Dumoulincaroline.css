@@ -303,6 +303,11 @@ i.fa-info {
     border: white solid 5px;
     /* **************************************** */
     background-color: white;
+    transform: scale(1);
+}
+
+.fig_accomadation:hover {
+    transform: scale(1.2);
 }
 
 .photo {
@@ -374,7 +379,8 @@ i.fa-info {
     flex-direction: row;
     margin-right: 0;
     align-items: center;
-    justify-content: space-around;
+    margin-left: 3rem;
+    justify-content: space-between;
     width: 77%;
 }
 
@@ -604,7 +610,8 @@ footer {
     }
     .fig_accomadation.aside {
         padding: 0%;
-        padding-right: 75px;
+        width: 74%;
+        padding-right: 40px;
         margin-left: 20px;
         margin-bottom: 20px;
     }
@@ -621,6 +628,9 @@ footer {
     .text_icon {
         background-color: rgb(242 242 242);
         justify-content: flex-start;
+        width: 93%;
+        margin: 0;
+        justify-content: space-evenly;
         width: 100%;
     }
     .large, .medium, .xl {
@@ -635,6 +645,6 @@ footer {
     footer {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
+        padding-left: 25px;
     }
 }
