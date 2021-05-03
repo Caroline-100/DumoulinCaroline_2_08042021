@@ -28,6 +28,7 @@ body {
     font-size: 0.875em;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 0.1em;
+    margin: 0;
 }
 
 .page {
@@ -379,7 +380,7 @@ i.fa-info {
 .fig_accomadation.aside {
     display: -webkit-inline-box;
     /* **************************************** */
-    width: 65%;
+    width: 87%;
     padding-bottom: 0px;
     padding-right: 16px;
     /* **************************************** */
@@ -416,7 +417,7 @@ i.fa-info {
 }
 
 .parent_aside {
-    width: 126%;
+    width: 100%;
     height: 77%;
     grid-column-start: 6;
     border-radius: 0 0 20px 20px;
