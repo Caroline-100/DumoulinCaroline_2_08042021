@@ -499,20 +499,23 @@ i.fa-info {
 
 /* size image activities */
 
-.img_width {
+/* .img_width {
     width: 250px;
-}
+} */
 
 .xl {
     height: 400px;
+    width: 250px;
 }
 
 .large {
     height: 150px;
+    width: 250px;
 }
 
 .medium {
     height: 150px;
+    width: 250px;
 }
 
 /* # start footer  *****************************************/
