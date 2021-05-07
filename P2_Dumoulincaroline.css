@@ -542,7 +542,7 @@
      display: flex;
      padding: 0px;
      padding-top: 43px;
-     /* margin-left: 5%; */
+     margin-left: 5%;
  }
 
  .navigation .image:hover {
@@ -610,6 +610,9 @@
          width: 95%;
          margin-left: 5%;
          margin-right: 5%;
+     }
+     .image.image-pad {
+         margin: 0;
      }
      .m {
          width: 100%;
