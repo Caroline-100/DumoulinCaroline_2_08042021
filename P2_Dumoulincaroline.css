@@ -460,9 +460,7 @@
      height: -moz-fit-content;
      border-radius: 10px;
      margin-bottom: 0;
-     width: a;
      margin: 10px;
-     width: -moz-fit-content;
      box-shadow: 0px 15px 20px 0px #d1d1d1;
  }
 
@@ -554,10 +552,6 @@
  /* max width of 350px */
 
  @media (min-width: 768px) and (max-width:1024px) {
-     /* section.activities.part_one.flexcol_space_beween > figure > img, */
-     /* .fig_accomadation {
-         height: 310px;
-     } */
      .activities.part_one.flexcol_space_beween>figure, .activities.col.part_two.flex.flexcol_space_beween>figure:nth-child(2), .activities.col.part_two.flex.flexcol_space_beween>figure:nth-child(3) {
          width: 95%;
          height: 100%;
