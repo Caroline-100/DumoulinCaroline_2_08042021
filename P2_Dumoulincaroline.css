@@ -29,6 +29,13 @@
      margin: 0;
  }
 
+ .filters_list {
+     display: flex;
+     flex-wrap: wrap;
+     margin:0;
+     padding: 0;
+ }
+
  .flex {
      display: flex;
  }
