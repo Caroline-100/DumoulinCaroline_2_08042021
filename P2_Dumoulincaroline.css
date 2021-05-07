@@ -25,8 +25,14 @@
  body {
      font-size: 0.875em;
      font-family: 'Raleway', sans-serif;
-     letter-spacing: 0.1em;
      margin: 0;
+ }
+
+ .filters_list {
+     display: flex;
+     flex-wrap: wrap;
+     margin: 0;
+     padding: 0;
  }
 
  .flex {
@@ -480,7 +486,7 @@
  /* size image activities */
 
  .xl, .large, .medium {
-     width: 270px;
+     width: 100%;
  }
 
  .xl {
@@ -536,7 +542,7 @@
      display: flex;
      padding: 0px;
      padding-top: 43px;
-     margin-left: 5%;
+     /* margin-left: 5%; */
  }
 
  .navigation .image:hover {
@@ -582,12 +588,12 @@
      .activities {
          width: 97%;
      }
-     button {
+     .button {
          border-radius: 10px;
-         width: 10%;
+         width: 5%;
          position: absolute;
          font-weight: 900;
-         right: 40px;
+         right: 15%;
          padding-right: 39px;
          padding-bottom: 17px;
      }
@@ -627,7 +633,7 @@
          flex-direction: row;
          padding: 0;
          margin-right: 0;
-         border-bottom: 3px solid #F2F2F2;
+         margin-left: 0;
      }
      .reservia_img {
          position: absolute;
@@ -655,9 +661,10 @@
          padding-bottom: 20px;
          width: 100%;
          text-align: center;
+         border-bottom: 2px solid #F2F2F2;
      }
      .elemnt_accommodation:hover, .elemnt_activities:hover {
-         border-bottom: solid #0065FC 3px;
+         border-bottom: solid #0065FC 2px;
          border-top: 0;
      }
      .R_isolate-element--space {
@@ -741,7 +748,7 @@
      }
      .fig_accomadation.aside {
          padding: 0%;
-         width: 77%;
+         width: 88%;
          margin-bottom: 20px;
      }
      .party_aside {
